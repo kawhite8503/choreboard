@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 DAYS = (
@@ -37,5 +38,5 @@ class Chore(models.Model):
   def __str__(self):
     return f'{self.name} was assigned to {self.assigned_to}'
 
-
-  
+  def get_absolute_url(self):
+    return reverse('chores_detail', kwargs={'chore_id': self.id})

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Chore, Household
 
 def home(request):
@@ -31,3 +31,12 @@ class ChoreCreate(CreateView):
   model = Chore
   fields = '__all__'
   success_url = '/chores/'
+
+class ChoreUpdate(UpdateView):
+  model = Chore
+  fields = ['name', 'location', 'details', 'day_of_week', 'assigned_to']
+
+class ChoreDelete(DeleteView):
+  model = Chore
+  success_url = '/chores/'
+

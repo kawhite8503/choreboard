@@ -8,7 +8,12 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Add a Chore</h1>
+  {% if chore %}
+    <h1>Edit Chore</h1>
+    <h1>"{{ chore.name }}"</h1>
+  {% else %}
+    <h1>Add a Chore</h1>
+  {% endif %}
   <img src="{% static '' %}" alt="Add Chore"/>
 </div>
 <form action="" method="post" class="form-container">

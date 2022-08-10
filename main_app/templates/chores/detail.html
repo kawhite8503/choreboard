@@ -26,6 +26,8 @@
     {% endif %}
     <p>{{ chore.day_of_week }}</p>
     <p>{{ chore.assigned_to }}</p>
+    <a href="{% url 'chores_update' chore.id %}" class="btn warn">Edit</a>
+    <a href="{% url 'chores_delete' chore.id %}" class="btn danger">Delete</a>
   </div>
 </section>
 
