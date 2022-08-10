@@ -23,6 +23,7 @@
       <div class="card">
         <h1>test</h1>
         {% for chore in chores %}
+        <a href="{% url 'chores_detail' chore.id %}">
           <div class="yellow">
             {% if name == chore.assigned_to %}
             <div class="card-content">
@@ -41,6 +42,7 @@
             </div>
             {% endif %}
           </div>
+        </a>
         {% endfor %}
       </div>
       {% endfor %}
