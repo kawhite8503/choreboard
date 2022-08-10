@@ -35,6 +35,7 @@ class Chore(models.Model):
   assigned_to = models.ForeignKey(User, on_delete=models.CASCADE)
   hh_code = models.ForeignKey(Household, on_delete=models.CASCADE)
 
+
   def __str__(self):
     return f'{self.name} was assigned to {self.assigned_to}'
 
