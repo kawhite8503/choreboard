@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/chores/chores-index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+  <h1>Chore List</h1>
+  {% comment %} <img src="{% static '' %}" alt="Broom" />
+  <img src="{% static '' %}" alt="Dishes" />
+  <img src="{% static '' %}" alt="Bed" />
+  <img src="{% static '' %}" alt="Books" /> {% endcomment %}
+</section>
+
+<section class="card-container">
+  {% for name in new_list %}
+    <div class="names_list">
+      <h1>{{name}}</h1>
+      <div class="card">
+        <h1>test</h1>
+        {% for chore in chores %}
+          <div class="yellow">
+            {% if name == chore.assigned_to %}
+            <div class="card-content">
+              <div class="card-img-container">
+                <img 
+                  src="{% static '' %}" 
+                  alt="Chore"
+                >
+              </div>
+              <h2 class="card-title">{{ chore.name }}</h2>
+              <h4 class="">{{ chore.details }}</h4>
+              <h3 class="">{{ chore.location }}</h3>
+              <h2 class="">{{ chore.day_of_week }}</h2>
+              <h3>Assigned to: {{ chore.assigned_to }}</h3>
+              <button>DELETE</button>
+            </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+    </section>
+
+{% endblock %}

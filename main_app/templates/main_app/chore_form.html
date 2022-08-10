@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+  <h1>Add a Chore</h1>
+  <img src="{% static '' %}" alt="Add Chore"/>
+</div>
+<form action="" method="post" class="form-container">
+  {% csrf_token %}
+  <table>
+    {% comment %}
+      Render the inputs inside of <tr>s & <td>s
+    {% endcomment %}
+    {{ form.as_table }}
+  </table>
+  <button type="submit" class="btn submit">Submit!</button>
+</form>
+
+{% endblock %}
