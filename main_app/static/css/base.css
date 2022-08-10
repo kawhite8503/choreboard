@@ -18,13 +18,13 @@ html {
 }
 
 body {
+  background-image: url("/static/images/andrej-lisakov-9DRYbaWevgk-unsplash.jpg");
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 
-    'Helvetica Neue', sans-serif;
+  font-family: font-family: 'Lato', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   min-height: 100vh;
   --nav-bg: rgba(104, 197, 248, .7);
   --nav-bg-ff: rgba(104, 197, 248, .9);

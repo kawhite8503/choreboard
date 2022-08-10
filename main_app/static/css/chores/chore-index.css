@@ -4,7 +4,7 @@
   /* flex-direction: row; */
   justify-content: center;
   flex-wrap: wrap;
-  background-color: green;
+
 }
 
 .card {
@@ -12,13 +12,15 @@
   margin: 10px;
   border: var(--borders);
   box-shadow: var(--card-box-shadow);
+  background-color: aqua;
 
 }
 
 .card-content {
   padding: 10px;
-  width: 100%;
-  background-color: lightcoral;
+  margin: 20px;
+  border: solid 2px purple;
+  background-color: white;
 }
 
 .usr-img {
@@ -41,9 +43,9 @@
   font-size: var(--font-reg);
 }
 
-.yellow {
+/* .yellow {
   padding: 20px;
-}
+} */
 
 
 
@@ -51,5 +53,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  background-color: pink;
+  margin: 20px;
+  padding: 20px;
   /* width: 100vw; */
 }

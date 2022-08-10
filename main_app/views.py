@@ -3,6 +3,8 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Chore, Household
 
 class Home(LoginView):
@@ -11,6 +13,8 @@ class Home(LoginView):
 def about(request):
   return render(request, 'about.html')
 
+
+@login_required
 def chores_index(request):
   chores = Chore.objects.all()
   names = []
@@ -25,12 +29,13 @@ def chores_index(request):
 
   return render( request, 'chores/index.html', { 'chores': chores, 'names': names, 'new_list': new_list, 'Household': Household})
 
+@login_required
 def chores_detail(request, chore_id):
   chore = Chore.objects.get(id=chore_id)
   return render(request, 'chores/detail.html', { 'chore': chore})
 
 
-class ChoreCreate(CreateView):
+class ChoreCreate(LoginRequiredMixin, CreateView):
   model = Chore
   fields = '__all__'
   success_url = '/chores/'
@@ -39,11 +44,11 @@ class ChoreCreate(CreateView):
     form.instance.user = self.request.user 
     return super().form_valid(form)
 
-class ChoreUpdate(UpdateView):
+class ChoreUpdate(LoginRequiredMixin, UpdateView):
   model = Chore
   fields = ['name', 'location', 'details', 'day_of_week', 'assigned_to']
 
-class ChoreDelete(DeleteView):
+class ChoreDelete(LoginRequiredMixin, DeleteView):
   model = Chore
   success_url = '/chores/'
 
@@ -54,7 +59,7 @@ def signup(request):
     if form.is_valid():
       user = form.save()
       login(request, user)
-      return redirect('cats_index')
+      return redirect('chores_index')
     else:
       error_message = 'Invalid sign up - try again'
   form = UserCreationForm()
