@@ -29,6 +29,45 @@ main > section {
 
 #homepg{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#loginform{
+  height: 250px;
+  box-shadow: 0px 0px 75px rgba(255,255,255, 0.5);
+}
+
+.loginbtn{
+  border: solid 2px #39a89c;
+  color: #39a89c;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: white;
+  margin: 15px 0 0 0;
+}
+
+#login-entire-pg{
+  display: flex;
   flex-direction: row;
-  margin-top: 200px;
+  align-items: center;
+  justify-content: space-evenly
+}
+
+.svgs{
+  height: 80px;
+  width: 80px;
+  color: white;
+  background-color: white;
+  opacity: 0.4;
+  box-shadow: 0px 0px 75px rgba(255,255,255, 0.5);
+  border-radius: 7px;
+  margin: 20px;
+}
+
+.sideimgs {
+  display: flex;
+  flex-direction: column;
 }

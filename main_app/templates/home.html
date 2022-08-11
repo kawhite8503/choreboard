@@ -6,23 +6,37 @@
 {% endblock %}
 
 {% block content %}
-<div id='homepg'>
-  <section class="logo-container">
-   
-      <img src="/static/images/White and Pink Strikeout Cosmetics Beauty Logo.png" alt="Logo" class="logoimg"/>
-
-  </section>
-
-  {% if not user.is_authenticated %}
-    <section>
-      <form action="{% url 'home' %}" method="post" class="login">
-        <h1>Login</h1>
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="hidden" name="next" value="{{ next }}">
-        <button type="submit" class="login">Login</button>
-      </form>
+<div id="login-entire-pg">
+  <div class="sideimgs">
+    <img src="/static/images/19851003641658929555.svg" alt="" class="svgs"/>
+    <img src="/static/images/bathtub-svgrepo-com.svg" alt="" class="svgs"/>
+    <img src="/static/images/clean.svg" alt="" class="svgs"/>
+    <img src="static/images/sink-svgrepo-com.svg" alt="" class="svgs"/>
+    <img src="/static/images/vacuum-cleaner-svgrepo-com.svg" alt="" class="svgs"/>
+  </div>
+  <div id='homepg'>
+    <section class="logo-container">
+        <img src="/static/images/White and Pink Strikeout Cosmetics Beauty Logo.png" alt="Logo" class="loginlogoimg"/>
     </section>
-  {% endif %}
+
+    {% if not user.is_authenticated %}
+      <section>
+        <form action="{% url 'home' %}" method="post" class="login" id="loginform">
+          <h1>Login</h1>
+          {% csrf_token %}
+          {{ form.as_p }}
+          <input id="logininput" type="hidden" name="next" value="{{ next }}">
+          <button type="submit" class="loginbtn">Login</button>
+        </form>
+      </section>
+    {% endif %}
+  </div>
+  <div class="sideimgs">
+    <img src="/static/images/5155833401645780282.svg" alt="" class="svgs"/>
+    <img src="/static/images/7482184741658929553.svg" alt="" class="svgs"/>
+    <img src="/static/images/8434328971656669440.svg" alt="" class="svgs"/>
+    <img src="/static/images/14216224191637204295.svg" alt="" class="svgs"/>
+    <img src="/static/images/15877255511535956128.svg" alt="" class="svgs"/>
+  </div>
 </div>
 {% endblock %}

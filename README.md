@@ -15,3 +15,20 @@ Photo by <a href="https://unsplash.com/@lishakov?utm_source=unsplash&utm_medium=
   
 
   https://pixabay.com/illustrations/blackboard-school-education-6498216/?download
+
+
+        Icon by <a href="https://freeicons.io/profile/3">freeicons</a> on <a href="https://freeicons.io">freeicons.io</a>
+                Icon by <a href="https://freeicons.io/profile/3484">Becris</a> on <a href="https://freeicons.io">freeicons.io</a>
+
+                    Icon by <a href="https://freeicons.io/profile/102253">dDara</a> on <a href="https://freeicons.io">freeicons.io</a>
+            Icon by <a href="https://freeicons.io/profile/41323">111814839413044890163</a> on <a href="https://freeicons.io">freeicons.io</a>
+            Icon by <a href="https://freeicons.io/profile/255691">114079995953867746917</a> on <a href="https://freeicons.io">freeicons.io</a>
+    
+    
+    
+
+        Icon by <a href="https://freeicons.io/profile/104110">Sumit-7080</a> on <a href="https://freeicons.io">freeicons.io</a>
+            Icon by <a href="https://freeicons.io/profile/112433">ppanggm</a> on <a href="https://freeicons.io">freeicons.io</a>
+            Icon by <a href="https://freeicons.io/profile/255691">114079995953867746917</a> on <a href="https://freeicons.io">freeicons.io</a>
+
+https://www.svgrepo.com/collection/household-set/
