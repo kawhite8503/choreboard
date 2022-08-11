@@ -10,3 +10,8 @@ Photo by <a href="https://unsplash.com/@rmallick6806?utm_source=unsplash&utm_med
 
 Photo by <a href="https://unsplash.com/@lishakov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrej Lišakov</a> on <a href="https://unsplash.com/s/photos/board-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+
+  Photo by <a href="https://unsplash.com/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gradienta</a> on <a href="https://unsplash.com/s/photos/bright-banner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+  https://pixabay.com/illustrations/blackboard-school-education-6498216/?download
