@@ -26,24 +26,6 @@ body {
   font-family: font-family: 'Lato', sans-serif;
   font-family: 'PT Sans Narrow', sans-serif;
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
-  --nav-bg-ff: rgba(104, 197, 248, .9);
-  --borders: rgb(36, 116, 248) solid 2px;
-  --text-color: rgb(17, 20, 17);
-  --link-hover-color: rgb(16, 56, 158);
-  --button-bg: rgb(245, 245, 245);
-  --button-bg-hover: rgb(226, 226, 226);
-  --submit: rgb(26, 128, 0);
-  --warn: rgb(255, 102, 0);
-  --danger: rgb(220, 20, 30);
-  --secondary: rgb(57, 57, 57);
-  --card-box-shadow: 5px 5px 6px -1px #AAA;
-  --font-xtreme: 4.2rem;
-  --font-xxl: 3.6rem;
-  --font-xl: 2.4rem;
-  --font-l: 1.8rem;
-  --font-reg: 1.6rem;
-  --card-border-radius: 6px;
 }
 
 
@@ -64,18 +46,18 @@ main {
 }
 
 h2 {
-  font-size: var(--font-xl);
+  font-size: 20px;
 }
 
 .menu-bar {
   background-image: linear-gradient(-90deg, #d6d963, #6fe7db, #c4adc9, #f2a3bd);
+  margin: 15px 15px;
 }
 
 .navbar-brand{
   font-size: 25px;
   margin: 15px;
   color: black;
-  
   font-weight: bold;
 }
 
@@ -112,6 +94,62 @@ h2 {
   min-height: 90px;
 }
 
+.navbar-toggler-icon{
+  /* width: 20px;
+  border: solid 2px black; */
+}
+
+.form-container{
+  width: 60vw;
+  height: 370px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 40px;
+
+}
+
+.signup-container{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.logoimg{
+  border-radius: 20px;
+}
+
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.helptext{
+  font-style: italic;
+  font-size: 14px;
+}
+
+label{
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+.error{
+  font-size: 30px;
+  color: red;
+}
+
+
+
+
 @media only screen and (max-width: 1000px){
   .nav-link:hover {
     border-bottom: none!important;
@@ -120,3 +158,4 @@ h2 {
     margin: 0;
   }
 }
+

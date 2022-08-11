@@ -29,31 +29,21 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+              {% if user.is_authenticated %}
               <a class="nav-link active" aria-current="page" href="{% url 'chores_index' %}">All Chores</a>
                 <a class="nav-link" href="{% url 'chores_create' %}">Add Chores</a>
                 <a class="nav-link" href="{% url 'about' %}">About</a>
-                <a class="nav-link" href="{% url 'logout' %}">Log out</a>
+                <a class="nav-link" href="{% url 'logout' %}">Log Out</a>
+                {% else %}
+                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link" href="{% url 'home' %}">Log In</a>
+                <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
+                {% endif %}
             </div>
           </div>
         </div>
       </nav>
     </div>
-      
-      
-      {% comment %} <nav>
-        <ul>
-          {% if user.is_authenticated %}
-          <li><a href="{% url 'chores_index' %}">All Chores</a></li>
-          <li><a href="{% url 'chores_create' %}">Add Chores</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'logout' %}">Log out</a></li>
-          {% else %}
-          <li><a href="{% url 'about' %}">About</a></li>
-          <li><a href="{% url 'home' %}">Login</a></li>
-          <li><a href="{% url 'signup' %}">Sign Up</a></li>
-          {% endif %}
-        </ul>
-      </nav> {% endcomment %}
     </div>
       <main>
         {% block content %}

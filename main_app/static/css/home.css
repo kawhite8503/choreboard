@@ -22,3 +22,13 @@ main > section {
   justify-content: center;
   align-items: center;
 }
+
+.logoimg{
+  border-radius: 30px;
+}
+
+#homepg{
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}

@@ -6,23 +6,23 @@
 {% endblock %}
 
 {% block content %}
+<div id='homepg'>
+  <section class="logo-container">
+   
+      <img src="/static/images/White and Pink Strikeout Cosmetics Beauty Logo.png" alt="Logo" class="logoimg"/>
 
-<section class="logo-container">
-  <div class="hhm-container">
-    <img src="" alt="Logo" />
-  </div>
-</section>
-
-{% if not user.is_authenticated %}
-  <section>
-    <form action="{% url 'home' %}" method="post" class="login">
-      <h1>Login</h1>
-      {% csrf_token %}
-      {{ form.as_p }}
-      <input type="hidden" name="next" value="{{ next }}">
-      <button type="submit" class="login">Login</button>
-    </form>
   </section>
-{% endif %}
 
+  {% if not user.is_authenticated %}
+    <section>
+      <form action="{% url 'home' %}" method="post" class="login">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="hidden" name="next" value="{{ next }}">
+        <button type="submit" class="login">Login</button>
+      </form>
+    </section>
+  {% endif %}
+</div>
 {% endblock %}
