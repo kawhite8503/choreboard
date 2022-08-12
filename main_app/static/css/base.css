@@ -313,6 +313,9 @@ form > p {
     margin: 15px;
     padding: 3px 3px 0px 3px
   }
+  #id_details{
+    max-width: 300px;
+  }
 }
 
 
