@@ -32,3 +32,9 @@ Photo by <a href="https://unsplash.com/@lishakov?utm_source=unsplash&utm_medium=
             Icon by <a href="https://freeicons.io/profile/255691">114079995953867746917</a> on <a href="https://freeicons.io">freeicons.io</a>
 
 https://www.svgrepo.com/collection/household-set/
+
+https://uxwing.com/check-mark-square-icon/
+
+https://uxwing.com/check-mark-box-line-icon/
+
+<a target="_blank" href="https://icons8.com/icon/vgnUMtmeA923/alert">alert</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

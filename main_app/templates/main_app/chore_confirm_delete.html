@@ -2,20 +2,24 @@
 {% load static %}
 
 {% block content %}
-
-<div class="page-header">
-  <h1>Delete???</h1>
-  <img src="" alt="Questioning look"/>
+<div id="entiredeletepg">
+  <div id="delete-page-header">
+    <img src="/static/images/newalert.png" id="alerticon"/>
+    <h1 id="deletetitlequestion">Delete???</h1>
+    <img src="/static/images/newalert.png" id="alerticon"/>
+  </div>
+  <div id="deletepage">
+      <h2 id="questiondelete">Are you sure you want to delete this chore?</h2>
+    <p id="delete-title-name">{{ chore.name }}</p>
+    
+    <form id="confirmdeleteform" action="" method="POST" class="form">
+      {% csrf_token %}
+      <a href="{% url 'chores_detail' chore.id %}" id="cancelBtn">
+        Cancel
+      </a>
+      <button type="submit" id="deleteBtn">Yes - Delete!</button>
+    </form>
+  </div>
 </div>
-<h2>Are you sure you want to delete this chore?</h2>
-<p>{{ chore.name }}</p>
-
-<form action="" method="POST" class="form">
-  {% csrf_token %}
-  <a href="{% url 'chores_detail' chore.id %}" class="cancel">
-    Cancel
-  </a>
-  <button type="submit" class="delete">Yes - Delete!</button>
-</form>
 
 {% endblock %}

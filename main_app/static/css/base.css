@@ -27,12 +27,6 @@ body {
   min-height: 100vh;
 }
 
-
-/* 
-nav {
-  margin: 10px;
-} */
-
 ul {
   margin: 0;
   list-style: none;
@@ -81,7 +75,7 @@ h2 {
   padding: 10px;
   outline: none!important;
   background-color: #f4f4f0;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .navbar-toggler:hover{
@@ -142,7 +136,7 @@ h2 {
   height: 700px;
   background-color: rgb(255,255,255, 0.9);
   border-radius: 20px;
-  margin: 60px;
+  margin: 0 60px 60px 60px;
 }
 
 table{
@@ -266,8 +260,6 @@ form > p {
   margin-top: 50px;
   background-color: #443f46;
   box-shadow: 0px 0px 100px rgba(68, 63, 70, 1);
-  
-
 }
 
 .page-content{
@@ -327,4 +319,83 @@ form > p {
   opacity: 0.9;
   font-size: 20px;
   font-family: 'Special Elite', cursive;
+}
+
+#deletepage{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  height: 50vh;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 20px;
+  margin: 40px;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+
+#deleteBtn{
+  border: solid 2px #443f46;
+  color: #443f46;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: white;
+  margin: 15px;
+  padding: 4px 10px 0px 10px;
+  text-decoration: none;
+}
+
+#cancelBtn{
+  border: solid 2px #443f46;
+  color: #443f46;
+  font-size: 20px;
+  border-radius: 7px;
+  background-color: white;
+  margin: 15px;
+  padding: 10px 10px 4px 10px;
+  text-decoration: none;
+}
+
+#delete-title-name{
+  font-size: 60px;
+  background-color: #6fe7db;
+  border-radius: 7px;
+  padding: 30px 40px 14px 40px;
+}
+
+#questiondelete{
+  font-size: 25px;
+}
+
+#delete-page-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f0;
+  margin-top: 50px;
+
+}
+
+#entiredeletepg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#deletetitlequestion{
+  font-size: 30px;
+  font-weight: 800;
+  background-color: #443f46;
+  padding-top: 5px;
+  box-shadow: 0px 0px 100px rgba(68, 63, 70, 1);
+}
+
+#alerticon{
+  max-width: 50px;
+  max-height: 50px;
+  margin: 20px 25px 35px 20px;
 }

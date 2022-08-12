@@ -12,22 +12,25 @@
 {% block content %}
 
 <section class="chore-container">
-  <div class="chore-img">
-    <img 
-      src="" 
-      alt="Broom"
-    >
+  <div id="details-header">
+    <img src="/static/images/15877255511535956128.svg" alt="Check details"class="bubbles">
+    <h1 id="detailsname">{{ chore.assigned_to }}</h1>
+    <img src="/static/images/15877255511535956128.svg" alt="Check details" class="bubbles">
   </div>
-  <div class="chore-details">
-    <h1>{{ chore.name }}</h1>
-    <p>{{ chore.location }}</p>
-    {% if chore.details %}
-      <h2> {{ chore.details }}</h2>
-    {% endif %}
-    <p>{{ chore.day_of_week }}</p>
-    <p>{{ chore.assigned_to }}</p>
-    <a href="{% url 'chores_update' chore.id %}" class="btn warn">Edit</a>
-    <a href="{% url 'chores_delete' chore.id %}" class="btn danger">Delete</a>
+  <div class="chore-detail">
+    <h1 class="dow">{{ chore.day_of_week }}</h1>
+    <h1 id="chore-name">{{ chore.name }}</h1>
+    <div id="detaildiv">
+      {% if chore.details %}
+      <p id="introdetails">Details:</p>
+      <h1 id="chore-details"> {{ chore.details }}</h1>
+      {% endif %}
+    </div>
+    <h1 id="chore-location"><span id="loc">Location:  </span>{{ chore.location }}</h1>
+    <div>
+      <a href="{% url 'chores_update' chore.id %}" class="editBtn">Edit</a>
+      <a href="{% url 'chores_delete' chore.id %}" class="deleteBtn">Delete</a>
+    </div>
   </div>
 </section>
 
