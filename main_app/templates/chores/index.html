@@ -19,32 +19,29 @@
 <section class="card-container">
   
   <div class="names_list">
-  {% for name in new_list %}
-  <h1>{{name}}</h1>
+    {% for name in new_list %}
+    <div id="userlist">
+      <h1>{{name}}</h1>
       <div class="card">
-        {% for chore in chores %}
-        <div class="yellow">
+        {% for chore in chores %} 
+        <div> 
           {% if name == chore.assigned_to %}
           <a href="{% url 'chores_detail' chore.id %}">
             <div class="card-content">
-              <div class="card-img-container">
-                <img 
-                src="" 
-                alt="Chore"
-                >
+              <h2 id="dow">{{ chore.day_of_week }}</h2>
+              <div>
+                <h2 id="card-title">{{ chore.name }}</h2>
+                <h3 id="indexlocation">{{ chore.location }}</h3>
               </div>
-              <h2 class="card-title">{{ chore.name }}</h2>
-              <h3 class="">{{ chore.location }}</h3>
-              <h2 class="">{{ chore.day_of_week }}</h2>
-              <h3>Assigned to: {{ chore.assigned_to }}</h3>
             </div>
           </a>
-          {% endif %}
-        </div>
+          {% endif %}  
+        </div>   
         {% endfor %}
       </div>
-      {% endfor %}
     </div>
-    </section>
+    {% endfor %}
+  </div>
+</section>
 
 {% endblock %}

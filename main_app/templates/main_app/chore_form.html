@@ -8,18 +8,22 @@
 {% block content %}
 <div id="add-main">
   <div class="page-header">
-    {% if chore %}
-      <h1 class="addoredit">Edit Chore</h1>
-      <h1>"{{ chore.name }}"</h1>
-    {% else %}
-      <h1 class="addoredit">Add a Chore</h1>
-    {% endif %}
-      <img src="/static/images/7482184741658929553.svg" alt="" class="svgs"/>
-      <img src="/static/images/clean.svg" alt="" class="svgs"/>
-      <img src="/static/images/5155833401645780282.svg" alt="" class="svgs"/>
+    <div>
+      {% if chore %}
+        <h1 class="addoredit">Edit Chore</h1>
+        <h1>"{{ chore.name }}"</h1>
+      {% else %}
+        <h1 class="addoredit">Add a Chore</h1>
+      {% endif %}
+    </div>
+      <div>
+        <img src="/static/images/7482184741658929553.svg" alt="" class="svgs"/>
+        <img src="/static/images/clean.svg" alt="" class="svgs"/>
+        <img src="/static/images/5155833401645780282.svg" alt="" class="svgs"/>
+      </div>
   </div>
   <div id="addform">
-    <form action="" method="post" id="form-container">
+    <form action="" method="post" id="add-chore-form-container">
       {% csrf_token %}
       <table>
         {{ form.as_table }}

@@ -8,13 +8,13 @@
 {% block content %}
 <h1>Sign Up</h1>
 <div class='signup-container'>
-  <div class="signup-header">
-    <img src="/static/images/White and Pink Strikeout Cosmetics Beauty Logo.png" alt="Logo" id='smalllogoimg'/>
+  <div>
+    <h1 class="title"><span class='small'>The</span><br>Chore<br>Board</h1>
   </div>
   {% if error_message %}
     <p class="error">{{ error_message }}</p>
   {% endif %}
-  <form action="" method="post" class="form-container" autocomplete="off">
+  <form action="" method="post" id="form-container" autocomplete="off">
     {% csrf_token %}
     <table>
       {{ form.as_table }}

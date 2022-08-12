@@ -10,17 +10,31 @@
 .card {
   width: 275px;
   margin: 10px;
-  border: solid 2px #f2a3bd;
-  box-shadow: 5px 5px 6px -1px #6fe7db;
-  background-color: aqua;
-
 }
 
 .card-content {
-  padding: 10px;
+  padding: 20px 10px;
   margin: 20px;
-  border: solid 2px purple;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#card-content {
+  padding: 20px 10px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-content:hover{
+  border: solid 1px #6fe7db;
+  border-radius: 5px;
 }
 
 .usr-img {
@@ -43,18 +57,52 @@
   font-size: 16px;
 }
 
-/* .yellow {
-  padding: 20px;
-} */
-
-
 
 .names_list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-evenly;
-  background-color: pink;
   margin: 20px;
   padding: 20px;
-  /* width: 100vw; */
+  flex-wrap: wrap;
+}
+
+#userlist{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+#dow{
+  background-color: #6fe7db;
+  width: 79px;
+  padding: 26px 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 55px;
+  max-width: 55px;
+  color: #443f46;
+}
+
+#card-title{
+  font-size: 25;
+  color: #443f46;
+  font-weight: bold;
+}
+
+#indexlocation{
+  font-size: 10;
+  color: #443f46;
 }

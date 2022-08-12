@@ -85,3 +85,30 @@ th{
 #id_location{
 
 }
+
+.title{
+  font-size: 75px;
+  color: #f4f4f0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.small{
+  font-size: 30px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 1000px){
+  .page-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .addoredit {
+    margin: 40px 0 0 0;
+  }
+  .svgs{
+    margin-bottom: 0;
+  }
+}
