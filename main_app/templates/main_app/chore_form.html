@@ -6,25 +6,27 @@
 {% endblock %}
 
 {% block content %}
-
-<div class="page-header">
-  {% if chore %}
-    <h1>Edit Chore</h1>
-    <h1>"{{ chore.name }}"</h1>
-  {% else %}
-    <h1>Add a Chore</h1>
-  {% endif %}
-  <img src="" alt="Add Chore"/>
+<div id="add-main">
+  <div class="page-header">
+    {% if chore %}
+      <h1 class="addoredit">Edit Chore</h1>
+      <h1>"{{ chore.name }}"</h1>
+    {% else %}
+      <h1 class="addoredit">Add a Chore</h1>
+    {% endif %}
+      <img src="/static/images/7482184741658929553.svg" alt="" class="svgs"/>
+      <img src="/static/images/clean.svg" alt="" class="svgs"/>
+      <img src="/static/images/5155833401645780282.svg" alt="" class="svgs"/>
+  </div>
+  <div id="addform">
+    <form action="" method="post" id="form-container">
+      {% csrf_token %}
+      <table>
+        {{ form.as_table }}
+      </table>
+      <button type="submit" class="submitbtn">Submit!</button>
+    </form>
+  </div>
 </div>
-<form action="" method="post" class="form-container">
-  {% csrf_token %}
-  <table>
-    {% comment %}
-      Render the inputs inside of <tr>s & <td>s
-    {% endcomment %}
-    {{ form.as_table }}
-  </table>
-  <button type="submit" class="btn submit">Submit!</button>
-</form>
 
 {% endblock %}

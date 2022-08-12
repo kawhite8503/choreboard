@@ -14,15 +14,16 @@
     <img src="static/images/sink-svgrepo-com.svg" alt="" class="svgs"/>
     <img src="/static/images/vacuum-cleaner-svgrepo-com.svg" alt="" class="svgs"/>
   </div>
-  <div id='homepg'>
-    <section class="logo-container">
+  <div id='center-homepg'>
+    {% comment %} <section class="logo-container">
         <img src="/static/images/White and Pink Strikeout Cosmetics Beauty Logo.png" alt="Logo" class="loginlogoimg"/>
-    </section>
-
+    </section> {% endcomment %}
+    <div>
+      <h1 class="title">The<br>Chore<br>Board</h1>
+    </div>
     {% if not user.is_authenticated %}
       <section>
-        <form action="{% url 'home' %}" method="post" class="login" id="loginform">
-          <h1>Login</h1>
+        <form action="{% url 'home' %}" method="post" class="login" id="loginform">         
           {% csrf_token %}
           {{ form.as_p }}
           <input id="logininput" type="hidden" name="next" value="{{ next }}">
