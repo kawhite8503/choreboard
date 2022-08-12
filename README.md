@@ -1,40 +1,48 @@
+<h1>There's no time to be bored when you have Chore Board!</h1>
+
+![Login Page](public/images/IndexScreenshot.png)
 
 
-Photo by Dominika Roseclay: https://www.pexels.com/photo/lemons-on-white-background-2208836/
+:airplane: :car: Summer is almost over, the activities are winding down, and the kids suddenly have NOTHING to do!
 
-Photo by <a href="https://unsplash.com/@jessbaileydesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jess Bailey</a> on <a href="https://unsplash.com/s/photos/school?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+"I'm bored!!" Our response?? "Nonsense!! If you bored, pick up a chore!!!"
 
-Photo by <a href="https://unsplash.com/@rmallick6806?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ray Mallick</a> on <a href="https://unsplash.com/s/photos/cleaning-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+The Chore Board is here to add routine and responsibility for the entire household! Set daily chores or add as you need for when the kids get restless! 
 
-Photo by <a href="https://unsplash.com/@lishakov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrej Lišakov</a> on <a href="https://unsplash.com/s/photos/board-background?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+![Event Page](public/images/EventDetailScreenshot.png)
 
-  Photo by <a href="https://unsplash.com/@gradienta?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gradienta</a> on <a href="https://unsplash.com/s/photos/bright-banner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+ 
 
-  https://pixabay.com/illustrations/blackboard-school-education-6498216/?download
+![Packing List Page](public/images/PackListScreenshot.png)  
+
+## Launch the application [here](https://kwhitechoreboard.herokuapp.com/)  
+## View my Trello board [here](https://trello.com/b/WUcbGLts/chore-board)
+
+## Technologies used :floppy_disk:
+
+CSS  
+Python
+HTML  
+git  
+Django
+MVT Architecture
+PostgreSQL 
+Docker  
+
+## Credits
+
+-[Background Image](https://pixabay.com/illustrations/blackboard-school-education-6498216/?download)  
+-[Main icons, including favicon](https://www.svgrepo.com/collection/household-set/)  
+-[Alert icon](https://icons8.com/icon/vgnUMtmeA923/alert)
 
 
-        Icon by <a href="https://freeicons.io/profile/3">freeicons</a> on <a href="https://freeicons.io">freeicons.io</a>
-                Icon by <a href="https://freeicons.io/profile/3484">Becris</a> on <a href="https://freeicons.io">freeicons.io</a>
 
-                    Icon by <a href="https://freeicons.io/profile/102253">dDara</a> on <a href="https://freeicons.io">freeicons.io</a>
-            Icon by <a href="https://freeicons.io/profile/41323">111814839413044890163</a> on <a href="https://freeicons.io">freeicons.io</a>
-            Icon by <a href="https://freeicons.io/profile/255691">114079995953867746917</a> on <a href="https://freeicons.io">freeicons.io</a>
-    
-    
-    
+## Ice Box Goals
 
-        Icon by <a href="https://freeicons.io/profile/104110">Sumit-7080</a> on <a href="https://freeicons.io">freeicons.io</a>
-            Icon by <a href="https://freeicons.io/profile/112433">ppanggm</a> on <a href="https://freeicons.io">freeicons.io</a>
-            Icon by <a href="https://freeicons.io/profile/255691">114079995953867746917</a> on <a href="https://freeicons.io">freeicons.io</a>
+- [ ] Add Option to Upload Personal Photo to Event  :camera:
 
-https://www.svgrepo.com/collection/household-set/
+- [ ] Add Parent Boolean into User signup for parental controls  :power:   
+      - Only parents can delete chores once completed. 
+      - Only parents can switch chores between users.
 
-https://uxwing.com/check-mark-square-icon/
-
-https://uxwing.com/check-mark-box-line-icon/
-
-<a target="_blank" href="https://icons8.com/icon/vgnUMtmeA923/alert">alert</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+- [ ] Add inputs for kids to comment on chores to notify parents chores are completed and can be deleted after approval.  :checkmark:  
