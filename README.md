@@ -33,6 +33,7 @@ Django
 MVT Architecture  
 PostgreSQL  
 Docker   
+Heroku
 
 ## Credits
 
