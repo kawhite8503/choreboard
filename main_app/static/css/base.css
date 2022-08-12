@@ -19,6 +19,7 @@ html {
 
 body {
   background-image: url("/static/images/blackboard-6498216.jpg");
+  background-size: cover;
   margin: 0;
   display: flex;
   flex-direction: column;
