@@ -24,10 +24,10 @@ main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 34vw;
-  height: 100vh;
-  margin-top: 50px;
+  height: 90vh;
+  margin-bottom: 300px;
 }
 
 #loginform{
@@ -53,13 +53,14 @@ main > section {
 }
 
 .svgs{
-  height: 80px;
-  width: 80px;
+  height: 90px;
+  width: 90px;
   background-color: white;
   opacity: 0.7;
-  box-shadow: 0px 0px 75px rgba(255,255,255, 0.8);
+
   border-radius: 7px;
   margin: 40px;
+  padding: 15px;
 }
 
 .sideimgs {
@@ -70,4 +71,16 @@ main > section {
   width: 33vw;
   height: 100vh;
   margin-top: 75px;
+}
+
+.title{
+  font-size: 75px;
+  color: #f4f4f0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.small{
+  font-size: 30px;
+  font-style: italic;
 }

@@ -218,14 +218,6 @@ form > p {
   margin-top: 5px;
 }
 
-.title{
-  font-size: 75px;
-  color: #f4f4f0;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-}
-
 #about-details{
   display: flex;
   flex-direction: column;
@@ -257,6 +249,10 @@ form > p {
   font-size: 35px;
   color: #f4f4f0;
   margin-top: 50px;
+  background-color: #443f46;
+  box-shadow: 0px 0px 100px rgba(68, 63, 70, 1);
+  
+
 }
 
 .page-content{
