@@ -126,3 +126,17 @@
 #loc{
   margin-right: 30px;
 }
+
+@media only screen and (max-width: 1000px){
+  #chore-name {
+    background-color: #c4adc9;
+    opacity: 0.8;
+    font-size: 45px;
+    font-weight: 900;
+    padding: 40px 60px;
+    border-radius: 7px;
+    border: solid 1px #443f46;
+  }
+  .chore-detail {
+    height: 90vh;
+}
