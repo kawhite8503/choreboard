@@ -316,6 +316,9 @@ form > p {
   #id_details{
     max-width: 300px;
   }
+  #add-chore-form-container{
+    margin: 50px 60px 60px 60px;
+  }
 }
 
 
