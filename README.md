@@ -45,7 +45,9 @@ Heroku
 
 ## Ice Box Goals
 
-- [ ] Add Option to Upload Personal Photo to Event  :camera:
+- [ ] Add Option to Upload Personal Photo to Event  :camera:  
+
+- [ ] Sort by: Day of week / Location  
 
 - [ ] Add Parent Boolean into User signup for parental controls
       - Only parents can delete chores once completed.  
