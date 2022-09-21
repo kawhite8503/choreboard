@@ -280,48 +280,6 @@ form > p {
   color: red;
 }
 
-@media only screen and (max-width: 1000px){
-  .nav-link:hover {
-    border-bottom: none!important;
-    color: white;
-  }
-  .nav-link{
-    margin: 0;
-    font-size: 20px;
-  }
-  .page-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #about-details{
-    width: 80vw;
-  }
-  input{
-    width: 150px;
-  }
-  label{
-    font-size: 16px;
-  }
-  .submitbtn {
-    border: solid 1px #443f46;
-    color: #443f46;
-    font-size: 16px;
-    border-radius: 7px;
-    background-color: white;
-    margin: 15px;
-    padding: 3px 3px 0px 3px
-  }
-  #id_details{
-    max-width: 300px;
-  }
-  #add-chore-form-container{
-    margin: 50px 60px 60px 60px;
-  }
-}
-
-
 #id_details{
   opacity: 0.9;
   font-size: 20px;
@@ -405,4 +363,58 @@ form > p {
   max-width: 50px;
   max-height: 50px;
   margin: 20px 25px 35px 20px;
+}
+
+@media only screen and (max-width: 1000px){
+  .nav-link:hover {
+    border-bottom: none!important;
+    color: white;
+  }
+  .nav-link{
+    margin: 0;
+    font-size: 20px;
+  }
+  .page-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #about-details{
+    width: 80vw;
+  }
+  input{
+    width: 150px;
+  }
+  label{
+    font-size: 16px;
+  }
+  .submitbtn {
+    border: solid 1px #443f46;
+    color: #443f46;
+    font-size: 16px;
+    border-radius: 7px;
+    background-color: white;
+    margin: 15px;
+    padding: 3px 3px 0px 3px
+  }
+  #id_details{
+    max-width: 300px;
+  }
+  #add-chore-form-container{
+    margin: 50px 60px 60px 60px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  #add-chore-form-container{
+    width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  #add-chore-form-container{
+    width: 100vw;
+    border-radius: unset;
+  }
 }

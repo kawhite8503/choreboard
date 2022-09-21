@@ -32,7 +32,9 @@ main > section {
 
 #loginform{
   height: 250px;
+  width: 350px;
   opacity: 0.9;
+
 }
 
 .loginbtn{
@@ -85,7 +87,7 @@ main > section {
   font-style: italic;
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 800px){
   .svgs{
     display: none;
   }

@@ -1,0 +1,110 @@
+.card-container {
+  padding: 0 30px;
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 275px;
+  margin: 10px;
+}
+
+.card-content {
+  padding: 20px 10px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#card-content {
+  padding: 20px 10px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card-content:hover{
+  border: solid 1px #443f46;
+  border-radius: 5px;
+}
+
+
+.usr-img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card > a {
+  text-decoration: none;
+  color: black;
+}
+
+.card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+
+.names_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+#userlist{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 40px 40px 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#dow{
+  background-color: #6fe7db;
+  width: 79px;
+  padding: 26px 20px;
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 55px;
+  max-width: 55px;
+  color: #443f46;
+  border: solid 1px #443f46;
+}
+
+#card-title{
+  font-size: 25;
+  color: #443f46;
+  font-weight: bold;
+}
+
+#indexlocation{
+  font-size: 10;
+  color: #443f46;
+}
