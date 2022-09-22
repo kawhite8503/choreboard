@@ -1,7 +1,9 @@
 .addoredit{
   font-size: 36px;
   color: white;
-  margin: 40px;
+  margin: 40px 40px 40px 90px;
+  width: 300px;
+  text-align: center;
 }
 
 .svgs{
@@ -10,7 +12,7 @@
   background-color: white;
   opacity: 0.7;
   border-radius: 7px;
-  margin: 40px;
+  /* margin: 40px; */
   padding: 10px;
 }
 
@@ -82,9 +84,13 @@ th{
   align-items: center;
 }
 
-#id_location{
-
+#addEditImgs{
+  display: flex;
+  margin: 40px 0 40px 0;
+  justify-content: space-evenly;
+  width: 100vw;
 }
+
 
 .title{
   font-size: 75px;

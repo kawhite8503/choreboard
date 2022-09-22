@@ -28,7 +28,6 @@
   max-width: 45px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 7px;
-  margin: 0 80px;
 }
 
 #detailsname{
@@ -41,8 +40,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-bottom: 40px;
+  width: 100vw;
 }
 
 .dow{
@@ -67,6 +67,7 @@
   padding: 70px 120px;
   border-radius: 7px;
   border: solid 1px #443f46;
+  text-align: center;
 }
 
 #chore-location{
@@ -139,15 +140,18 @@
   }
   .chore-detail {
     height: 90vh;
-    width: 85vw;
+    width: 90vw;
   }
 }
 
 @media only screen and (max-width: 500px){
-  #detaildiv{
-    border-radius: unset;
+  .chore-detail{
+    width: 95vw;
   }
-  #chore-name{
-    border-radius: unset;
+}
+
+@media only screen and (max-width: 400px){
+  .chore-detail{
+    width: 100vw;
   }
 }
