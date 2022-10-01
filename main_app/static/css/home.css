@@ -34,7 +34,7 @@ main > section {
   height: 250px;
   width: 350px;
   opacity: 0.9;
-
+  text-align: center;
 }
 
 .loginbtn{
